@@ -1,0 +1,76 @@
+div {
+  margin: auto;
+}
+figcaption {
+  font-family: monospace;
+  font-size: 1.5em;
+}
+h1 {
+  color: #FFFFFF;
+  padding: 0.5em;
+  font-family: fantasy;
+}
+h2 {
+  color: #00A030;
+  background-color: #FFFFA0;
+}
+h3 {
+  color: #00A030;
+  background-color: #FFFFA0;
+  font-family: sans-serif;
+}
+a {
+  color: #3030FF;
+  background-color: #FFFFA0;
+}
+#main {
+  background-color: #0080FF;
+  text-align:center;
+}
+#image {
+  display: block;
+  width: 70%;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+#tribute-info {
+  width: 100%;
+}
+#pubs {
+  clear: both;
+}
+#tribute-list-links {
+  background-color: #FFFF00;
+  clear: both;
+  width: 50%;
+}
+.about-item {
+  background-color: #FFFF00;
+  box-sizing: border-box;
+  width: 28%;
+}
+.pub-article {
+  background-color: #FFFF00;
+  box-sizing: border-box;
+  width: 45%;
+}
+.pad-it, .about-item, .pub-article {
+  margin: 1em;
+  padding: 1em;
+}
+.left-floaty {
+  float: left;
+}
+.right-floaty {
+  float: right;
+}
+@media (max-width: 675px) {
+  .about-item, .pub-article {
+    float: none;
+    width: 95%;
+  }
+  #tribute-list-links {
+    width: 60%;
+  }
+}
