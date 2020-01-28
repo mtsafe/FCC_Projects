@@ -1,0 +1,137 @@
+body {
+  background-color: salmon;
+  text-align: center;
+  font-size: 1em;
+}
+header {
+  color: #FFFFFF;
+  background-color: inherit;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  opacity: 1;
+  position: fixed;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  z-index: 50;
+}
+.gap-filler {
+  background-color: inherit;
+  position: fixed;
+  height: 2em;
+  top: -1em;
+  width: 100%;
+  z-index: 45;
+}
+#header-img {
+  background-color: inherit;
+  margin: 0px 8px 0px 0px;
+  padding: 0px;
+}
+.h1-heading {
+  color: inherit;
+  background-color: olive;
+  padding: 0px 15px 0px 15px;
+  min-height: 2.25em;
+}
+h1 {
+  font-size: 3em;
+  margin: 0;
+  padding-top: 1em;
+}
+#nav-bar {
+  color: #FFFFFF;
+  background-color: inherit;
+  font-family: cursive;
+  font-size: 1.5em;
+  margin-right: 8px;
+  padding: 0.25em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+.nav-link-container {
+  margin: 0px 0px 8px 0px;
+  width: 100%;
+}
+.nav-link {
+  color: #301010;
+  text-decoration: none;
+}
+.nav-link:hover, .nav-link-container:hover,
+.nav-link:active, .nav-link-container:active {
+  color: #FFFFFF;
+  background-color: #800000;
+  text-decoration: underline;
+}
+.href {
+  display: block;
+  position: relative;
+  top: -190px;
+  visibility: hidden;
+}
+main {
+  background-color: inherit;
+  position: absolute;
+  top: 160px;
+}
+h2 {
+  color: #301010;
+  font-size: 2.5em;
+}
+figcaption {
+  font-family: monospace;
+  font-size: 1.5em;
+}
+.form-container {
+  color: #FFFFFF;
+  background-color: #301010;
+  font-family: sans-serif;
+  padding: 0.5em;
+}
+#about-salmon, #choose-salmon, #love-salmon {
+  background-color: inherit;
+  margin: 0 auto;
+  width: 95%;
+}
+dt {
+  color: #FFFFFF;
+  background-color: #301010;
+  line-height: 200%;
+}
+@media (max-width: 693px) {
+  h1 {
+    padding-top: 0.5em;
+  }
+  #nav-bar {
+    font-size: 1.25em;
+  }
+  main {
+    top: 140px;
+  }
+}
+@media (max-width: 661px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  #nav-bar {
+    flex-direction: row;
+  }
+  main {
+    top: 200px;
+  }
+}
+@media (max-width: 495px) {
+  header {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  h1 {
+    padding-top: 0em;
+  }
+  main {
+    top: 300px;
+  }
+}
