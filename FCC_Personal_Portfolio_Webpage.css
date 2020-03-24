@@ -95,4 +95,25 @@ nav a:hover, footer a:hover {
       "Survey Survey"
       "Manpage Manpage";
   }
+  footer a {
+    display: block;
+  }
+}
+@media (max-width: 450px) {
+  #navbar {
+    font-size: 18pt;
+    height: 35px;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  p {
+    font-size: 1.5em;
+  }
+  footer {
+    font-size: 18pt;
+  }
 }
