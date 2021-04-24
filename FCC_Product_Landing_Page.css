@@ -1,11 +1,21 @@
+html {
+  --primary-background: hsl(6, 93%, 71%);    /* salmon color */
+  --title-background: hsl(66, 93%, 24%);
+  --hover-background: hsl(0, 100%, 25%);
+  --primary-text: hsl(0, 50%, 13%);
+  --bright-text: hsl(0, 0%, 100%);
+
+  color: var(--primary-text);
+  background-color: var(--primary-background);
+  font-family: 'Times New Roman', Times, serif;
+}
 body {
-  background-color: salmon;
   text-align: center;
-  font-size: 1em;
+  font-size: 1rem;
 }
 header {
-  color: #FFFFFF;
-  background-color: inherit;
+  color: var(--bright-text);
+  background-color: var(--primary-background);
   width: 100%;
   margin: 0px;
   padding: 0px;
@@ -17,7 +27,7 @@ header {
   z-index: 50;
 }
 .gap-filler {
-  background-color: inherit;
+  /* background-color: inherit; */
   position: fixed;
   height: 2em;
   top: -1em;
@@ -25,13 +35,13 @@ header {
   z-index: 45;
 }
 #header-img {
-  background-color: inherit;
+  /* background-color: inherit; */
   margin: 0px 8px 0px 0px;
   padding: 0px;
 }
-.h1-heading {
-  color: inherit;
-  background-color: olive;
+.title {
+  color: var(--bright-text);
+  background-color: var(--title-background);
   padding: 0px 15px 0px 15px;
   min-height: 2.25em;
 }
@@ -41,8 +51,7 @@ h1 {
   padding-top: 1em;
 }
 #nav-bar {
-  color: #FFFFFF;
-  background-color: inherit;
+  color: var(--bright-text);
   font-family: cursive;
   font-size: 1.5em;
   margin-right: 8px;
@@ -56,13 +65,13 @@ h1 {
   width: 100%;
 }
 .nav-link {
-  color: #301010;
+  color: var(--primary-text);
   text-decoration: none;
 }
 .nav-link:hover, .nav-link-container:hover,
 .nav-link:active, .nav-link-container:active {
-  color: #FFFFFF;
-  background-color: #800000;
+  color: var(--bright-text);
+  background-color: var(--hover-background);
   text-decoration: underline;
 }
 .href {
@@ -75,9 +84,15 @@ main {
   background-color: inherit;
   position: absolute;
   top: 160px;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-padding: 160px 0px 0px 0px;
+}
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
 }
 h2 {
-  color: #301010;
   font-size: 2.5em;
 }
 figcaption {
@@ -85,8 +100,8 @@ figcaption {
   font-size: 1.5em;
 }
 .form-container {
-  color: #FFFFFF;
-  background-color: #301010;
+  color: var(--bright-text);
+  background-color: var(--primary-text);
   font-family: sans-serif;
   padding: 0.5em;
 }
@@ -96,8 +111,8 @@ figcaption {
   width: 95%;
 }
 dt {
-  color: #FFFFFF;
-  background-color: #301010;
+  color: var(--bright-text);
+  background-color: hsl(0, 50%, 13%);
   line-height: 200%;
 }
 @media (max-width: 693px) {
