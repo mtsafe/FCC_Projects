@@ -12,13 +12,13 @@ html {
 body {
   text-align: center;
   font-size: 1rem;
+  margin: 0px;
 }
 header {
   color: var(--bright-text);
   background-color: var(--primary-background);
   width: 100%;
-  margin: 0px;
-  padding: 0px;
+  padding: 8px;
   opacity: 1;
   position: fixed;
   display: flex;
@@ -27,7 +27,6 @@ header {
   z-index: 50;
 }
 .gap-filler {
-  /* background-color: inherit; */
   position: fixed;
   height: 2em;
   top: -1em;
@@ -35,7 +34,6 @@ header {
   z-index: 45;
 }
 #header-img {
-  /* background-color: inherit; */
   margin: 0px 8px 0px 0px;
   padding: 0px;
 }
@@ -81,16 +79,8 @@ h1 {
   visibility: hidden;
 }
 main {
-  background-color: inherit;
   position: absolute;
   top: 160px;
-  overflow: scroll;
-  scroll-snap-type: y mandatory;
-  scroll-padding: 160px 0px 0px 0px;
-}
-section {
-  scroll-snap-align: start;
-  scroll-snap-stop: normal;
 }
 h2 {
   font-size: 2.5em;
@@ -106,13 +96,12 @@ figcaption {
   padding: 0.5em;
 }
 #about-salmon, #choose-salmon, #love-salmon {
-  background-color: inherit;
   margin: 0 auto;
   width: 95%;
 }
 dt {
   color: var(--bright-text);
-  background-color: hsl(0, 50%, 13%);
+  background-color: var(--primary-text);
   line-height: 200%;
 }
 @media (max-width: 693px) {
