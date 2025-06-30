@@ -1,137 +1,170 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="wc(1) man page
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="wc(1) man page
 Print newline, word, and byte counts for each FILE, and a total line
 if more than one FILE is specified. ...">
-    <link rel="stylesheet" href="FCC_Technical_Documentation_Page.css">
-    <title>wc(1), man page</title>
-  </head>
-  <body>
-    <nav id="navbar">
-      <div class="nav-header-container">
-        <header id="header"><a href="#title">wc(1) command</a></header></div>
-      <div class="nav-link-container">
-        <a id="a-A" class="nav-link" href="#Name">Name</a></div>
-      <div class="nav-link-container">
-        <a id="a-B" class="nav-link" href="#Synopsis">Synopsis</a></div>
-      <div class="nav-link-container">
-        <a id="a-C" class="nav-link" href="#Description">Description</a></div>
-      <div class="nav-link-container">
-        <a id="a-D" class="nav-link" href="#Sample_Code">Sample Code</a></div>
-      <div class="nav-link-container">
-        <a id="a-E" class="nav-link" href="#Author">Author</a></div>
-      <div class="nav-link-container">
-        <a id="a-F" class="nav-link" href="#Reporting_Bugs">Reporting Bugs</a></div>
-      <div class="nav-link-container">
-        <a id="a-G" class="nav-link" href="#Copyright">Copyright</a></div>
-      <div class="nav-link-container">
-        <a id="a-H" class="nav-link" href="#See_Also">See Also</a></div>
-      <div class="nav-link-container">
-        <a id="a-I" class="nav-link" href="#Referenced_By">Referenced By</a></div>
-    </nav>
-    <main id="main-doc">
-      <div id="title">
-        <h1>wc(1) - Linux man page</h1></div>
-      <section id="Name" class="main-section">
-        <header><h2>Name</h2></header>
-        <p>wc - print newline, word, and byte counts for each file</p>
-      </section>
-      <section id="Synopsis" class="main-section">
-        <header><h2>Synopsis</h2></header>
-        <p><b>wc</b> [<i>OPTION</i>]... [<i>FILE</i>]...<br>
-        <b>wc</b> [<i>OPTION</i>]... <i>--files0-from=F</i></p>
-      </section>
-      <section id="Description" class="main-section">
-        <header><h2>Description</h2></header>
-        <p>Print newline, word, and byte counts for each FILE, and a total
-          line if more than one FILE is specified. With no FILE, or when FILE
-          is -, read standard input.</p>
-        <dl>
-          <dt>-c, --bytes</dt>
-          <dd>print the byte counts</dd>
-          <dt>-m, --chars</dt>
-          <dd>print the character counts</dd>
-          <dt>-l, --lines</dt>
-          <dd>print the newline counts</dd>
-          <dt>--files0-from<span class="not-bold">=F</span></dt>
-          <dd>read input from the files specified by NUL-terminated names in
-            file F; If F is - then read names from standard input</dd>
-          <dt>-L, --max-line-length</dt>
-          <dd>print the length of the longest line</dd>
-          <dt>-w, --words</dt>
-          <dd>print the word counts</dd>
-          <dt>--help</dt>
-          <dd>display this help and exit</dd>
-          <dt>--version</dt>
-          <dd>output version information and exit</dd>
-        </dl>
-      </section>
-      <section id="Sample_Code" class="main-section">
-        <header><h2>Sample Code</h2></header>
-        <p class="unleaded">Number of lines</p>
-        <li><code>$ wc -l a_file</code></li>
-        <p class="unleaded">Number of words</p>
-        <li><code>$ wc -w a_file</code></li>
-        <p class="unleaded">Count of bytes</p>
-        <li><code>$ wc -c a_file</code></li>
-        <p class="unleaded">Count of characters</p>
-        <li><code>$ wc -m a_file</code></li>
-        <p class="unleaded">Length of longest line</p>
-        <li><code>$ wc -L a_file</code></li>
-      </section>
-      <section id="Author" class="main-section">
-        <header><h2>Author</h2></header>
-        <p>Written by Paul Rubin and David MacKenzie.</p>
-      </section>
-      <section id="Reporting_Bugs" class="main-section">
-        <header><h2>Reporting Bugs</h2></header>
-        <p>Report wc bugs to bug-coreutils@gnu.org
-          GNU coreutils home page:
-          <a href="http://www.gnu.org/software/coreutils/">
-            &lt;http://www.gnu.org/software/coreutils/&gt;</a><br>
-          General help using GNU software:
-          <a href="http://www.gnu.org/gethelp/">
-            &lt;http://www.gnu.org/gethelp/&gt;</a><br>
-          Report wc translation bugs to
-          <a href="http://translationproject.org/team/">
-            &lt;http://translationproject.org/team/&gt;</a>
-        </p>
-      </section>
-      <section id="Copyright" class="main-section">
-        <header><h2>Copyright</h2></header>
-        <p>Copyright Â© 2010 Free Software Foundation, Inc. License GPLv3+:
-          GNU GPL version 3 or later
-          <a href="http://gnu.org/licenses/gpl.html"
-          >&lt;http://gnu.org/licenses/gpl.html&gt</a>.<br>
-          This is free software: you are free to change and redistribute it.
-          There is NO WARRANTY, to the extent permitted by law.
-        </p>
-      </section>
-      <section id="See_Also" class="main-section">
-        <header><h2>See Also</h2></header>
-        <p>The full documentation for <b>wc</b> is maintained as a Texinfo
-          manual. If the <b>info</b> and <b>wc</b> programs are properly
-          installed at your site, the command
-        </p>
-        <p><b>info coreutils aqwc invocationaq</b></p>
-        <p>should give you access to the complete manual.</p>
-      </section>
-      <section id="Referenced_By" class="main-section">
-        <header><h2>Referenced By</h2></header>
-        <p><a href="https://linux.die.net/man/1/flowdumper">flowdumper</a>(1),
-          <a href="https://linux.die.net/man/1/gc">gc</a>(1),
-          <a href="https://linux.die.net/man/8/ip">ip</a>(8),
-          <a href="https://linux.die.net/man/1/nop">nop</a>(1),
-          <a href="https://linux.die.net/man/1/xs">xs</a>(1)
-        </p>
-      </section>
-    </main>
-    <footer>
-      <p><a href="https://linux.die.net/man/1/wc"
-        >Content derived from die.net</a></p>
-    </footer>
-  </body>
+  <link rel="stylesheet" href="FCC_Technical_Documentation_Page.css">
+  <title>wc(1), man page</title>
+</head>
+
+<body>
+  <nav id="navbar">
+    <div class="nav-header-container">
+      <header id="header"><a href="#title">wc(1) command</a></header>
+    </div>
+    <div class="nav-link-container">
+      <a id="a-A" class="nav-link" href="#Name">Name</a>
+    </div>
+    <div class="nav-link-container">
+      <a id="a-B" class="nav-link" href="#Synopsis">Synopsis</a>
+    </div>
+    <div class="nav-link-container">
+      <a id="a-C" class="nav-link" href="#Description">Description</a>
+    </div>
+    <div class="nav-link-container">
+      <a id="a-D" class="nav-link" href="#Sample_Code">Sample Code</a>
+    </div>
+    <div class="nav-link-container">
+      <a id="a-E" class="nav-link" href="#Author">Author</a>
+    </div>
+    <div class="nav-link-container">
+      <a id="a-F" class="nav-link" href="#Reporting_Bugs">Reporting Bugs</a>
+    </div>
+    <div class="nav-link-container">
+      <a id="a-G" class="nav-link" href="#Copyright">Copyright</a>
+    </div>
+    <div class="nav-link-container">
+      <a id="a-H" class="nav-link" href="#See_Also">See Also</a>
+    </div>
+    <div class="nav-link-container">
+      <a id="a-I" class="nav-link" href="#Referenced_By">Referenced By</a>
+    </div>
+  </nav>
+  <main id="main-doc">
+    <div id="title">
+      <h1>wc(1) - Linux man page</h1>
+    </div>
+    <section id="Name" class="main-section">
+      <header>
+        <h2>Name</h2>
+      </header>
+      <p>wc - print newline, word, and byte counts for each file</p>
+    </section>
+    <section id="Synopsis" class="main-section">
+      <header>
+        <h2>Synopsis</h2>
+      </header>
+      <p><b>wc</b> [<i>OPTION</i>]... [<i>FILE</i>]...<br>
+        <b>wc</b> [<i>OPTION</i>]... <i>--files0-from=F</i>
+      </p>
+    </section>
+    <section id="Description" class="main-section">
+      <header>
+        <h2>Description</h2>
+      </header>
+      <p>Print newline, word, and byte counts for each FILE, and a total
+        line if more than one FILE is specified. With no FILE, or when FILE
+        is -, read standard input.</p>
+      <dl>
+        <dt>-c, --bytes</dt>
+        <dd>print the byte counts</dd>
+        <dt>-m, --chars</dt>
+        <dd>print the character counts</dd>
+        <dt>-l, --lines</dt>
+        <dd>print the newline counts</dd>
+        <dt>--files0-from<span class="not-bold">=F</span></dt>
+        <dd>read input from the files specified by NUL-terminated names in
+          file F; If F is - then read names from standard input</dd>
+        <dt>-L, --max-line-length</dt>
+        <dd>print the length of the longest line</dd>
+        <dt>-w, --words</dt>
+        <dd>print the word counts</dd>
+        <dt>--help</dt>
+        <dd>display this help and exit</dd>
+        <dt>--version</dt>
+        <dd>output version information and exit</dd>
+      </dl>
+    </section>
+    <section id="Sample_Code" class="main-section">
+      <header>
+        <h2>Sample Code</h2>
+      </header>
+      <p class="unleaded">Number of lines</p>
+      <li><code>$ wc -l a_file</code></li>
+      <p class="unleaded">Number of words</p>
+      <li><code>$ wc -w a_file</code></li>
+      <p class="unleaded">Count of bytes</p>
+      <li><code>$ wc -c a_file</code></li>
+      <p class="unleaded">Count of characters</p>
+      <li><code>$ wc -m a_file</code></li>
+      <p class="unleaded">Length of longest line</p>
+      <li><code>$ wc -L a_file</code></li>
+    </section>
+    <section id="Author" class="main-section">
+      <header>
+        <h2>Author</h2>
+      </header>
+      <p>Written by Paul Rubin and David MacKenzie.</p>
+    </section>
+    <section id="Reporting_Bugs" class="main-section">
+      <header>
+        <h2>Reporting Bugs</h2>
+      </header>
+      <p>Report wc bugs to bug-coreutils@gnu.org
+        GNU coreutils home page:
+        <a target="_blank" rel="noopener noreferrer" href="http://www.gnu.org/software/coreutils/">
+          &lt;http://www.gnu.org/software/coreutils/&gt;</a><br>
+        General help using GNU software:
+        <a target="_blank" rel="noopener noreferrer" href="http://www.gnu.org/gethelp/">
+          &lt;http://www.gnu.org/gethelp/&gt;</a><br>
+        Report wc translation bugs to
+        <a target="_blank" rel="noopener noreferrer" href="http://translationproject.org/team/">
+          &lt;http://translationproject.org/team/&gt;</a>
+      </p>
+    </section>
+    <section id="Copyright" class="main-section">
+      <header>
+        <h2>Copyright</h2>
+      </header>
+      <p>Copyright Â© 2010 Free Software Foundation, Inc. License GPLv3+:
+        GNU GPL version 3 or later
+        <a target="_blank" rel="noopener noreferrer"
+          href="http://gnu.org/licenses/gpl.html">&lt;http://gnu.org/licenses/gpl.html&gt</a>.<br>
+        This is free software: you are free to change and redistribute it.
+        There is NO WARRANTY, to the extent permitted by law.
+      </p>
+    </section>
+    <section id="See_Also" class="main-section">
+      <header>
+        <h2>See Also</h2>
+      </header>
+      <p>The full documentation for <b>wc</b> is maintained as a Texinfo
+        manual. If the <b>info</b> and <b>wc</b> programs are properly
+        installed at your site, the command
+      </p>
+      <p><b>info coreutils aqwc invocationaq</b></p>
+      <p>should give you access to the complete manual.</p>
+    </section>
+    <section id="Referenced_By" class="main-section">
+      <header>
+        <h2>Referenced By</h2>
+      </header>
+      <p><a target="_blank" rel="noopener noreferrer" href="https://linux.die.net/man/1/flowdumper">flowdumper</a>(1),
+        <a target="_blank" rel="noopener noreferrer" href="https://linux.die.net/man/1/gc">gc</a>(1),
+        <a target="_blank" rel="noopener noreferrer" href="https://linux.die.net/man/8/ip">ip</a>(8),
+        <a target="_blank" rel="noopener noreferrer" href="https://linux.die.net/man/1/nop">nop</a>(1),
+        <a target="_blank" rel="noopener noreferrer" href="https://linux.die.net/man/1/xs">xs</a>(1)
+      </p>
+    </section>
+  </main>
+  <footer>
+    <p><a target="_blank" rel="noopener noreferrer" href="https://linux.die.net/man/1/wc">Content derived from
+        die.net</a></p>
+  </footer>
+</body>
+
 </html>
